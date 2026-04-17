@@ -149,6 +149,13 @@ Use esses dados para fazer login em `POST /api/auth` e obter o token JWT.
 | PATCH | /api/usuario/:id | Atualizar usuário | ✅ |
 | DELETE | /api/usuario/:id | Deletar usuário | ✅ |
 
+## ⚠️ Observações
+
+**Campo localização:** O campo `localizacao` aceita coordenadas geográficas no formato `latitude, longitude`. 
+Exemplo: `-16.6864, -49.2643` (Goiânia, GO)
+
+Você pode obter as coordenadas de um endereço pelo [Google Maps](https://maps.google.com) — clique com o botão direito no local desejado e copie as coordenadas.
+
 ---
 
 ## 📚 Sobre o Projeto
