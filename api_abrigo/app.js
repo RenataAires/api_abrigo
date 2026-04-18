@@ -21,4 +21,11 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/usuario', usuarioRoutes);
 app.use('/api/auth', authRoutes);
 
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'API Abrigo funcionando!',
+    rotas: ['/api/auth', '/api/abrigo', '/api/admin', '/api/usuario']
+  });
+});
+
 module.exports = app;
